@@ -39,7 +39,7 @@ public class MemberController {
 
 	@PostMapping(value={"/signup"})
 	public String showSignUpSuccessPage(@Valid Member member, BindingResult result) {
-		logger.debug("logger:{}", member);
+		logger.debug("logger : {}", member);
 		
 		if(result.hasErrors()) {
 			return "memberForm";
